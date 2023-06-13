@@ -1,12 +1,12 @@
 .section {
   display: flex;
   justify-content: center;
+  padding: 0 16px;
 }
 
 .section__content {
   max-width: 1200px;
   width: 100%;
-  padding: 0 16px;
 }
 @media all and (width < 1440px) {
   .section__content {
@@ -26,6 +26,16 @@
 @media all and (width < 620px) {
   .section__content {
     max-width: 500px;
+  }
+}
+
+.section__double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media all and (width < 1260px) {
+  .section__double {
+    grid-template-columns: 1fr;
   }
 }
 
